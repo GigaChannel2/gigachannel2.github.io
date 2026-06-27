@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-    <link rel="stylesheet" href="index-style.css">
+    <title>POST</title>
     <link rel="stylesheet" href="header-style.css">
-    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="sidemenu-style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="post.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <nav id="basic_ui">
         <div id="main-header">
         <!-- <div id="shadow"></div> -->
@@ -62,16 +65,15 @@
         </section>
     </nav>
 
-    <div id="content">
-        <!-- <div class="box-shadow" id="sidebar">
-            <a href="/bio" onclick="pagech('/bio')" class="href">Bio</a>
-            <a href="/page2" onclick="pagech('/page2')" class="href">Page 2</a>
-            <a href="/page3" onclick="pagech('/page3')" class="href">Page 3</a>
-            <a href="/page4" onclick="pagech('/page4')" class="href">Page 4</a>
-        </div> -->
-        <div class="box-shadow" id="page">
+    <div id="container">
+        <div class="box-shadow" id="post">
+            <div id="image"></div>
+            <h1 id="title"></h1>
+            <p id="date"></p>
+            <div id="content"></div>
         </div>
     </div>
+    
     <footer id="footer">
         <p style="margin-bottom: 100px;">
             Lebih keren dari pada <a href="http://masmisran.com" class="href">masmisran.com</a>
@@ -92,9 +94,11 @@
             @Copyright 2026
         </p>
     </footer>
+    
     <!-- <script src="import_ui.js"></script> -->
-    <script src="index-script.js"></script>
+    <script src="showdown.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script> -->
     <script src="header-sidemenu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script src="post-system.js"></script>
 </body>
 </html>

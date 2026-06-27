@@ -1,0 +1,21 @@
+{
+    "test123markdownortemplate": {
+        "title": "TEst Post 123",
+        "content": "test123markdownortemplate.md"
+    },
+    "404": {
+        "title": "UH OH!",
+        "content": "notfound.md"
+    },
+    "blog-1": {
+        "title": "Blog 1",
+        "date": "25 June 2026",
+        "thumbnail": "blog test omori.webp",
+        "content": "blog test.md"
+    },
+    "blog-2": {
+        "title": "Blog 2",
+        "date": "27 June 2026",
+        "content": "blog2.md"
+    }
+}
