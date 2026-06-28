@@ -26,6 +26,7 @@ body {
     align-items: center;
     /* gap: 150px; */
     flex-wrap: nowrap;
+    font-size: 22px;
     /* margin: 17px; */
 }
 
@@ -143,5 +144,9 @@ body {
         visibility: visible;
         /* display: block; */
         /* justify-self: flex-end; */
+    }
+    
+    .side {
+        flex: 0;
     }
 }

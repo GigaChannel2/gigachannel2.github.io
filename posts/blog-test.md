@@ -1,2 +1,0 @@
-ayam ayam  
-ayam
