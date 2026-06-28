@@ -108,4 +108,8 @@ article .href:hover {
         right: 0;
         width: 100%;
     }
+    #content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
