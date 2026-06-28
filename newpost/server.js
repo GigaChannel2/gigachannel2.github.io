@@ -22,8 +22,6 @@ app.post("/publish", upload.single("thumbnail"), (req, res) => {
         .toLowerCase()
         .replace(/\s+/g, "-");
 
-        
-
     const date = new Date().toLocaleDateString(
         "en-GB",
         {

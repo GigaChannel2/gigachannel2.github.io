@@ -36,6 +36,7 @@ body {
     color: white;
     resize: none;
     position: relative;
+    width: 100%;
     z-index: 0;
 }
 
@@ -53,6 +54,7 @@ body {
     gap: 0;
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .txt:first-of-type {
@@ -65,16 +67,17 @@ body {
 
 #title {
     font-size: 40px;
-    width: 100%;
     padding: 15px;
 }
 
 #input {
     font-size: 20px;
-    height: 100px;
-    width: 100%;
+    min-height: 100px;
+    max-height: max-content;
+    scrollbar-width: 90px;
     padding: 15px;
     margin-top: 5px;
+    overflow: hidden;
 }
 
 #prev {
@@ -122,6 +125,16 @@ body {
     z-index: 2;
 }
 
+#uploadBox.dragging {
+    border-color: dodgerblue;
+    background: rgba(30, 144, 255, 0.1);
+}
+
+#uploadBox:hover{
+    border-color: dodgerblue;
+    background: rgba(30, 144, 255, 0.1);
+}
+
 #uploadBox.empty {
     width: 250px;
     max-width: 250px;
@@ -139,6 +152,7 @@ body {
     width: 200px;
     border: none;
     padding: 15px;
+    background: #727272;
 }
 
 .create:first-of-type {
