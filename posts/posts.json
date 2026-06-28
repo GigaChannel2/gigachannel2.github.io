@@ -1,11 +1,11 @@
 {
-    "test123markdownortemplate": {
-        "title": "TEst Post 123",
-        "content": "test123markdownortemplate.md"
-    },
     "404": {
         "title": "UH OH!",
         "content": "notfound.md"
+    },
+    "test123markdownortemplate": {
+        "title": "TEst Post 123",
+        "content": "test123markdownortemplate.md"
     },
     "blog-1": {
         "title": "Blog 1",
