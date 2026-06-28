@@ -49,6 +49,11 @@ function search(param) {
     }
 }
 
-search();
+async function init() {
+    await fetchdata();
+    search();
+}
+
+init();
 fetchdata();
 
