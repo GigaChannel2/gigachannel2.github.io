@@ -12,7 +12,7 @@ const container = document.getElementById("page");
 async function loadContent() {
     const res = await fetch("posts/posts.json");
     const data = await res.json();
-
+    let pages = 0;
 
 
     for (const slug in data) {
@@ -44,6 +44,8 @@ async function loadContent() {
             return;
         }
 
+        if (pages >= 6) return;
+
         if (!post.thumbnail) {
             container.innerHTML += `
                 <article class="card">
@@ -62,6 +64,7 @@ async function loadContent() {
 
                 </article>
             `;
+            pages++;
         } else {
             container.innerHTML += `
                 <article class="card">
@@ -84,6 +87,7 @@ async function loadContent() {
 
                 </article>
             `;
+            pages++;
         }
         
     }
