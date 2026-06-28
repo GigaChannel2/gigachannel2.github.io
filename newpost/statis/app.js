@@ -132,9 +132,16 @@ async function make(send) {
 
 function convertMarkdown() {
     try {
+        const markdownTitle = title.value;
         const markdownText = content.value;
         const html = converter.makeHtml(markdownText);
-        output.innerHTML = html;
+        const html2 = converter.makeHtml("#" + markdownTitle);
+        if (markdownTitle === "" || markdownTitle === null) {
+            const html2 = converter.makeHtml("");
+        } else {
+            const html2 = converter.makeHtml("#" + markdownTitle);
+        }
+        output.innerHTML = `${html2} <br> ${html}`;
     } catch (error) {
         output.innerHTML = `<p style="color:red;">Error: ${error.message}</p>`;
     }
@@ -146,10 +153,14 @@ function autoResize() {
 }
 
 
+title.addEventListener("input", () => {
+    convertMarkdown();
+});
+
 content.addEventListener("input", () => {
     autoResize();
     convertMarkdown();
 });
 
 autoResize();
-convertMarkdown();
+// convertMarkdown();

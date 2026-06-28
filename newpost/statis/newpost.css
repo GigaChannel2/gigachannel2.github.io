@@ -152,7 +152,8 @@ body {
     width: 200px;
     border: none;
     padding: 15px;
-    background: #727272;
+    background: #8a8a8a;
+    transition: background 0.2s ease;
 }
 
 .create:first-of-type {
@@ -167,5 +168,26 @@ body {
     width: 200px;
     border: none;
     padding: 15px;
-    background: #969696;
+    background: #b9b9b9;
+    transition: background 0.2s ease;
+}
+
+#TIPS {
+    position: absolute;
+    right: 8vw;
+    max-width: 200px;
+    font-size: 15px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#TIPS:hover {
+    opacity: 0.3;
+    transition: opacity 0.4s ease;
+}
+
+@media (max-width: 900px) {
+    #TIPS {
+        display: none;
+    }
 }
