@@ -17,5 +17,11 @@
         "title": "Blog 2",
         "date": "27 June 2026",
         "content": "blog2.md"
+    },
+    "plushie-(pre-order-tahun-lalu)": {
+        "title": "Plushie (pre-order tahun lalu)",
+        "date": "29 June 2026",
+        "thumbnail": "plushie-(pre-order-tahun-lalu).png",
+        "content": "plushie-(pre-order-tahun-lalu).md"
     }
 }

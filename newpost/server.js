@@ -3,6 +3,9 @@ const multer = require("multer");
 const fs = require("fs");
 const path = require("path");
 const { exec } = require("child_process");
+const open = (...args) =>
+    import("open").then(({ default: open }) => open(...args));
+
 
 const app = express();
 
@@ -12,6 +15,8 @@ const upload = multer({
 console.log(__dirname);
 
 app.use(express.static("statis"));
+
+open('http://localhost:3000');
 
 app.post("/publish", upload.single("thumbnail"), (req, res) => {
     console.log("Publish request received!");
