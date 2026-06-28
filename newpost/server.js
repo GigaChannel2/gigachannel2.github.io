@@ -66,9 +66,11 @@ app.post("/publish", upload.single("thumbnail"), (req, res) => {
         JSON.stringify(json, null, 4)
     );
 
-    if (req.body.send) {
+    const safeTitle = title.replace(/"/g, '\\"');
+
+    if (req.body.send === "true") {
         exec(
-            'git add . && git commit -m "New post: " && git push',
+            `git add . && git commit -m "New post: ${safeTitle}" && git push`,
             {
                 cwd: "../" // folder repository Git kamu
             },

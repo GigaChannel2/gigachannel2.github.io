@@ -64,11 +64,11 @@ content.addEventListener("keydown", (e) => {
 // });
 
 submit.addEventListener("click", () => {
-    make(false);
+    make("false");
 });
 
 publish.addEventListener("click", () => {
-    make(true);
+    make("true");
 });
 
 async function make(send) {
