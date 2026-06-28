@@ -17,5 +17,23 @@
         "title": "Blog 2",
         "date": "27 June 2026",
         "content": "blog2.md"
+    },
+    "blog-tets": {
+        "title": "blog tets",
+        "date": "28 June 2026",
+        "thumbnail": null,
+        "content": "blog-tets.md"
+    },
+    "blog-test": {
+        "title": "blog test",
+        "date": "28 June 2026",
+        "thumbnail": null,
+        "content": "blog-test.md"
+    },
+    "blpg": {
+        "title": "BLPG",
+        "date": "29 June 2026",
+        "thumbnail": null,
+        "content": "blpg.md"
     }
 }
