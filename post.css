@@ -61,6 +61,12 @@
     padding-bottom: 50px;
 }
 
+#content hr {
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 0;
+}
+
 #post img {
     max-width: 100%;
     border-radius: 10px;

@@ -8,4 +8,5 @@ kalo ada duit.
 oke aku gatau mau ngomong apa lagi pokok nya aku happy gitu aja.  
   
 ---
+
 End of Blog
