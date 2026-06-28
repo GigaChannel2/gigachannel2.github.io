@@ -75,7 +75,8 @@
 }
 
 article .href:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: #92a2ff;
     cursor: pointer;
 }
 
