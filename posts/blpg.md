@@ -1,0 +1,2 @@
+ayama  
+amaya

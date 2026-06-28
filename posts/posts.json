@@ -29,5 +29,11 @@
         "date": "28 June 2026",
         "thumbnail": null,
         "content": "blog-test.md"
+    },
+    "blpg": {
+        "title": "BLPG",
+        "date": "29 June 2026",
+        "thumbnail": null,
+        "content": "blpg.md"
     }
 }
