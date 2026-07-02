@@ -13,7 +13,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     /* height: max-content; */
-    height: 900px;
+    min-height: 900px;
+    height: max-content;
     top: 125px;
     /* padding: 70px; */
     gap: 40px;
@@ -72,7 +73,8 @@ body {
     background: rgb(26, 26, 26);
     width: 100%;
     max-width: 900px;
-    height: 600px;
+    min-height: 600px;
+    max-height: max-content;
     align-self: center;
 }
 
