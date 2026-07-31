@@ -141,6 +141,7 @@ body {
 .href {
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .box-shadow {
@@ -176,6 +177,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     user-select: none;
+    cursor: pointer;
     pointer-events: none;
 }
 

@@ -1,4 +1,4 @@
-const debug = true;
+const debug = false;
 
 let page = document.getElementById("page");
 let page_txt = page.querySelector("h1");

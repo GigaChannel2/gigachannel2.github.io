@@ -81,13 +81,17 @@ function randomString(length = 8) {
     return result;
 }
 
-async function eggy() {
-    egg = Math.floor(Math.random() * 50);
+function eggy() {
+    if (debug) {
+        egg = 1;
+    } else {
+        egg = Math.floor(Math.random() * 50);
+    }
     // egg = 1;
 
     let eggframe = document.getElementById("eggframe");
     let eggdiv = document.getElementById("eggdiv");
-    if (egg == 1) {
+    if (egg === 1) {
         code = randomString();
         // let fethc = await fetch("egg.html").then(r => r.text());
 
