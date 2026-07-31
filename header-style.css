@@ -36,7 +36,8 @@ body {
 }
 
 #main-header #logo {
-    height: 35px;
+    font-size: 22px;
+    font-family: "8bit";
     justify-self: start;
     /* align-self: center; */
     margin-left: 20px;
@@ -44,6 +45,19 @@ body {
 
 #main-header #logo img {
     height: 100%;
+}
+
+#main-header #logo_btn {
+    height: 35px;
+    width: fit-content;
+    justify-self: start;
+    margin-left: 20px;
+    border: none;
+    background: rgb(255, 255, 255, 0);
+}
+
+#main-header #logo_btn:hover {
+    cursor: pointer;
 }
 
 #main-header ul {
@@ -132,6 +146,37 @@ body {
 .box-shadow {
     border-radius: 15px;
     box-shadow: 0 0 5px rgb(12, 12, 12);
+}
+
+#eggframe {
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    z-index: 100;
+}
+
+#eggdiv {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+    image-rendering: pixelated;
+}
+
+#eggdiv img {
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    pointer-events: none;
 }
 
  
