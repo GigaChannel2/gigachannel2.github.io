@@ -111,7 +111,7 @@ async function eggy() {
         // console.log(code);
     } else {
         href("https://gigachannel2.github.io/");
-        // console.log(egg);
+        console.log(egg);
     }
 }
 
